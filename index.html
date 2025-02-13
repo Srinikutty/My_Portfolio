@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/download (1).jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: ("j22NQYZ6cy7w_WyZ0"),
+      });
+   })();xglh
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Srini..svg" class="logo">
+                <ul id="menu">
+                    <li> <a href="#" onclick="popdown()">Home</a></li>
+                    <li> <a href="#about" onclick="popdown()">About</a></li>
+                    <li> <a href="#skills" onclick="popdown()">Skills</a></li>
+                    <li> <a href="#projects" onclick="popdown()">Project</a></li>
+                    <li> <a href="#contact" onclick="popdown()">Contact</a></li>
+                    <a class="hide" onclick="popdown()"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/multiply.png" alt="multiply"/></a>
+                </ul>
+                <a class="hide" onclick="popup()"><img width="48" height="48" src="https://img.icons8.com/fluency/48/menu--v1.png" alt="menu--v1"/></a>
+            </nav>
+                
+            <div class="header-text">
+                <p>I'm a <span id="element"></span></p>
+                <h1>Hi, I'm <br><span>Srinivasan</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------About section------------------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m a Junior Software Engineer with a strong command of web development technologies (HTML, CSS, JavaScript) and mobile app development using Flutter. I am driven by a passion for creating efficient, visually appealing interfaces and thrive in dynamic, team-based environments where collaboration is key.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Cx-operations</span><br>I have 6 months experience in customer experience (CX) department at sumeru software solutions.</li>
+                            <li><span>Web development</span><br>I have done one month internship in edify techno soutions.</li>
+                            <li><span>Training</span><br>I have done one month placement training in psn college of engineering & technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.E(cse)<br>PSN college of Engineering & Technology</li>
+                            <li><span>2020</span><br>HSC<br>Baren Bruck Hr Sec School</li>
+                            <li><span>2018</span><br>SSLC<br>Govt Hr Sec School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------- skills---------------------------------- -->
+     <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>  
+            <div class="skill-list">
+                <div>
+                    <img width="60" height="60" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1">
+                    <h3>Html</h3>
+                </div>
+                <div>
+                    <img width="65" height="65" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
+                    <h3>Css</h3>
+                </div>
+                <div>
+                    <img width="65" height="65" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
+                    <h3>Javascript</h3>
+                </div>
+                <div>
+                    <img width="65" height="65" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
+                    <h3>Java</h3>
+                </div>
+                <div>
+                    <img width="65" height="65" src="https://img.icons8.com/color/48/dart.png" alt="dart"/>
+                    <h3>Dart</h3>
+                </div>
+                <div>
+                    <img width="65" height="65" src="https://img.icons8.com/color/48/flutter.png" alt="flutter"/>
+                    <h3>Flutter</h3>
+                </div>
+                <div>
+                    <img width="65" height="65" src="https://img.icons8.com/fluency/48/c-programming.png" alt="c-programming"/>
+                    <h3>C</h3>
+                </div>
+                <div>
+                    <img width="65" height="65" src="https://img.icons8.com/fluency/48/applet--v2.png" alt="applet--v2"/>
+                    <h3>Applet</h3>
+                </div>
+            </div> 
+        </div>
+     </div>
+     <!-- ------------------Projects---------------------- -->
+      <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>  
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/photo-1507238691740-187a5b1d37b8.avif" alt="">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi labore eveniet voluptas nihil officiis dignissimos! amet.</p>
+                        <!-- <a href=""><img width="20" height="20" src="https://img.icons8.com/cotton/128/external-link--v1.png" alt="external-link--v1"/></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/istockphoto-1387653251-612x612.jpg" alt="">
+                    <div class="layer">
+                        <h3>Landing page</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint animi numquam ad maiores optio, asperiores rem!</p>
+                        <!-- <a href=""><img width="30" height="30" src="https://img.icons8.com/cotton/128/external-link--v1.png" alt="external-link--v1"/></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/istockphoto-1218004456-612x612.jpg" alt="">
+                    <div class="layer">
+                        <h3>Food delivery application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempore explicabo optio esse, nesciunt eveniet rem.</p>
+                        <!-- <a href=""><img width="10" height="10" src="https://img.icons8.com/cotton/128/external-link--v1.png" alt="external-link--v1"/></a> -->
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+      </div>
+      <!-- --------------------Contact------------------------ -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="img"><img width="30" height="30" src="https://img.icons8.com/color/48/sent--v2.png" alt="sent--v2"/><a href="mailto:srinikutty548@gmail.com"><p>srinikutty548@gmail.com</p></a></div>
+                    <div class="img"><img width="30" height="30" src="https://img.icons8.com/color/48/apple-phone.png" alt="apple-phone"/><a href="tel:+916385781593"><p>+91 6385781593</p></a></div>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/__srini_06?igsh=bmZjMzB6ZHU3bjFn"><img width="35" height="35" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+                        <a href="https://github.com/Srinikutty"><img width="35" height="35" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></a>
+                        <a href="mailto:srinikutty548@gmail.com"><img width="35" height="35" src="https://img.icons8.com/fluency/48/gmail-new.png" alt="gmail-new"/></a>
+                        <a href="https://wa.me/6385781593"><img width="35" height="35" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+                    </div>
+                    <a href="./srinivasan.pdf" download="My resume" class="btn btn-2">My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form id="remove">
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2" onclick="sendmail(event)">Submit</button>
+                    </form>
+                    <span id="mgs"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+           <p>Copyrights © Srini.. </p><img width="22" height="22" src="https://img.icons8.com/fluency/48/like.png" alt="like"/>
+        </div>
+       </div>
+</body>
+<script src="script.js"></script>
+</html>
