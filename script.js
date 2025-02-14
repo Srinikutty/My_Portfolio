@@ -19,6 +19,33 @@ var typed = new Typed('#element', {
         menu.style.right="-200px"
     }
 
+    // popup projects
+
+
+    var overlay=document.querySelector(".overlay")
+    var popupbox=document.querySelector(".Popupbox")
+    var popupbox1 = document.querySelector(".Popupbox-1")
+    var popupbox2 = document.querySelector(".Popupbox-2")
+
+    function show(){
+        popupbox.style.display="block"
+        overlay.style.display="block"
+    }
+    function show1(){
+        popupbox1.style.display="block"
+        overlay.style.display="block"
+    }
+    function show2(){
+        popupbox2.style.display="block"
+        overlay.style.display="block"
+    }
+
+    function closepopup(){
+        popupbox.style.display="none"
+        popupbox1.style.display="none"
+        popupbox2.style.display="none"
+        overlay.style.display="none"
+    }
 
 var tablinks = document.getElementsByClassName("tab-links")
 var tabcontents = document.getElementsByClassName("tab-contents")
@@ -64,7 +91,7 @@ function sendmail(event){
         )
     } 
     else{
-        alert("Fill the all required fields")
+        alert("Please fill the all required fields")
     }
 }
 
