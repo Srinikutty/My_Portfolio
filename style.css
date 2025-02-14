@@ -179,6 +179,7 @@ nav ul li a:hover::after{
 /* -----------------------projects------------------ */
 #projects{
     padding: 50x 0;
+    margin-bottom: 20px;
 }
 .work-list{
     display: grid;
@@ -219,6 +220,10 @@ nav ul li a:hover::after{
 .layer h3{
     font-weight: 600;
     margin-bottom: 20px;
+}
+.btn.btn-1{
+    border: black;
+    background: black;
 }
 /* .layer a{
     margin-top: 20px;
@@ -324,6 +329,108 @@ form .btn-2{
 }
 
 
+/* ---------------- Popup projects -------------------------------- */
+
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+.Popupbox {
+    position: absolute;
+    background-color:black;
+    color: white;
+    width: 80%;
+    height: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    z-index: 1;
+    display: none;
+    max-height: 90%; /* Limit the height */
+    overflow-y: auto; /* Allow scrolling if content exceeds max-height */
+}
+.Popupbox h3{
+    color:#ff004f;
+    margin-bottom: 5px;
+}
+.Popupbox h3 a {
+    color: white;
+    
+}
+.Popupbox-1 h3{
+    color:#ff004f;
+    margin-bottom: 5px;
+}
+.Popupbox-1 h3 a {
+    color: white;
+    
+}
+.Popupbox-2 h3{
+    color:#ff004f;
+    margin-bottom: 5px;
+}
+.Popupbox-2 h3 a {
+    color: white;
+    
+}
+
+.Popupbox-1{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    z-index: 1;
+    display: none;
+    max-height: 90%; /* Limit the height */
+    overflow-y: auto; /* Allow scrolling if content exceeds max-height */
+
+}
+.Popupbox-2{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    z-index: 1;
+    display: none;
+    max-height: 90%; /* Limit the height */
+    overflow-y: auto; /* Allow scrolling if content exceeds max-height */
+
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+button{
+    padding: 6px 20px;
+    border-radius: 7px;
+    border: 1px solid black;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.screenshot img{
+    display: flex;
+    gap: 10px;
+    min-height: auto;
+    width: 500px;
+    margin: 30px auto;
+}
 
 
 @media (max-width:767px)
@@ -372,5 +479,16 @@ form .btn-2{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    .overlay{
+        max-height: 50%; /* Limit the height */
+        overflow-y: auto;
+    }
+    .Popupbox{
+        max-height: 50%; /* Limit the height */
+        overflow-y: auto;
+    }
+    .not-visible{
+        display: none;
     }
 }
