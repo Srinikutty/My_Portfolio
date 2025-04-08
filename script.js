@@ -1,7 +1,7 @@
 
 //typing text 
 var typed = new Typed('#element', {
-    strings: ['Jr.Software Engineer', 'Frontend Developer', 'Designer'],
+    strings: ['Jr.Software Engineer', 'Frontend Developer', 'UI/UX Designer'],
     typeSpeed: 100,
     backSpeed: 70,
     startDelay:1000,
